@@ -15,7 +15,8 @@ html {
 
 body {
   position: relative;
-  background: linear-gradient(to right,#f1d0b5 0%,#f1d0b5 82%,rgb(255, 255, 255) 90%);
+  background: linear-gradient(to right,#f1d0b5 0%,#f3d4bb 82%,rgb(255, 255, 255) 90%);
+  height: 10000px;
 }
 
 @media screen and (maX-width: 700px) {
@@ -47,6 +48,10 @@ body {
   box-sizing: inherit;
 }
 
+.max-width-container {
+  max-width: 1440px;
+}
+
 .bar {
   height: 4px;
   background: #000000;
@@ -56,6 +61,7 @@ body {
 }
 
 .nav-button {
+  width: 56px;
   padding: 12px;
 }
 
@@ -65,7 +71,7 @@ body {
 }
 
 .nav-menu.active {
-  background: linear-gradient(to right,#fcd6ba 0%,#ffe1ca 90%, white 100%);
+  background: linear-gradient(to right,#f5d0b6 0%,#ffe1ca 90%, white 100%);
 }
 
 .nav-button.active .bar:nth-child(1) {

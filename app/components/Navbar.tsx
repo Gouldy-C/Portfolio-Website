@@ -5,14 +5,13 @@ import { useState } from "react";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  console.log(menuOpen);
   const toggleMenu = () => {
     setMenuOpen(prev => !prev);
   }
 
   return (
     <>
-      <div className={`nav-button w-14 fixed top-0 left-0 z-50 ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
+      <div className={`nav-button  fixed top-0 left-0 z-50 ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar w-3/4"></div>
         <div className="bar"></div>
