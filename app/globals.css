@@ -8,15 +8,55 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+html {
+  box-sizing: border-box;
+  font-size: 6px;
+}
+
+body {
+  background: linear-gradient(to right,#f1d0b5 0%,#f1d0b5 82%,rgb(255, 255, 255) 90%);
+}
+
+
+
+@media screen and (maX-width: 700px) {
+  body {
+    background: #f3d1b6;
+  }
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(6px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 700px) {
+  html {
+    font-size: calc(12px + 6 * ((100vw - 700px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: min(calc(18px + 6 * ((100vw - 1000px) / 680)), 16px);
+  }
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +64,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
