@@ -14,10 +14,9 @@ html {
 }
 
 body {
+  position: relative;
   background: linear-gradient(to right,#f1d0b5 0%,#f1d0b5 82%,rgb(255, 255, 255) 90%);
 }
-
-
 
 @media screen and (maX-width: 700px) {
   body {
@@ -48,20 +47,33 @@ body {
   box-sizing: inherit;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
+.bar {
+  height: 4px;
+  background: #000000;
+  transition: 0.4s;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+.nav-button {
+  padding: 12px;
+}
+
+
+.nav-menu {
+  padding: 16px;
+}
+
+.nav-menu.active {
+  background: linear-gradient(to right,#fcd6ba 0%,#ffe1ca 90%, white 100%);
+}
+
+.nav-button.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-7px, 7px);
+}
+.nav-button.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-button.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -7px);
+}
