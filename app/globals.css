@@ -15,11 +15,11 @@ html {
 
 body {
   position: relative;
-  background: linear-gradient(to right,#f1d0b5 0%,#f3d4bb 82%,rgb(255, 255, 255) 90%);
+  background: linear-gradient(to right,#f0cbad 0%,#ffe0c7 82%,rgb(255, 236, 219) 90%);
   height: 10000px;
 }
 
-@media screen and (maX-width: 700px) {
+@media screen and (max-width: 700px) {
   body {
     background: #f3d1b6;
   }
@@ -40,12 +40,9 @@ body {
   }
 }
 
-*,
-*:before,
-*:after {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 .max-width-container {
@@ -71,7 +68,7 @@ body {
 }
 
 .nav-menu.active {
-  background: linear-gradient(to right,#f5d0b6 0%,#ffe1ca 90%, white 100%);
+  background: linear-gradient(to right,#ffddc6 0%,#fde3d1 90%, rgb(255, 240, 228) 100%);
 }
 
 .nav-button.active .bar:nth-child(1) {

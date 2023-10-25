@@ -7,7 +7,7 @@ interface MaxWidthContainerProps {
 
 function ContainerLg({ children } : MaxWidthContainerProps) {
   return (
-    <div className="max-width-container mx-auto">
+    <div className="max-width-container mx-auto relative">
       {children}
     </div>
   )
