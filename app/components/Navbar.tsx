@@ -31,9 +31,11 @@ function Navbar() {
                 
                 <div className="flex flex-col justify-between h-full w-full">
                   <div>
-                    <h2 className="text-[30px] underline">Christian Gouldy</h2>
+                    <a className="" href="#home" onClick={toggleMenu}>
+                      <h2 className="text-[30px] underline">Christian Gouldy</h2>
+                    </a>
                     <ul className=" py-5">
-                      <li><a href="#">Item 1</a></li>
+                      <li><a className="" href="#about" onClick={toggleMenu}>About Me</a></li>
                       <li><a href="#">Item 2</a></li>
                       <li><a href="#">Item 3</a></li>
                     </ul>
