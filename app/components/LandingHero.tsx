@@ -6,7 +6,7 @@ function LandingHero() {
       <div className="relative flex align-center justify-end h-full w-11/12 m-auto max-w-5xl pt-[35px]">
         <div className="absolute z-10 h-full left-0 ml-8 flex flex-col justify-center">
           <div>
-            <h1 className="font-bold text-7xl text-orange-600">Hello <br/> I’m <span className="underline">Christian<br/>Gouldy</span></h1>
+            <h1 className=" font-extrabold text-6xl md:text-7xl text-orange-600">Hello <br/> I’m <span className="underline">Christian<br/>Gouldy</span></h1>
           </div>
         </div>
         <div className="right-0 ml-48 mr-2">

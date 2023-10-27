@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 :root {
+  --off-white-gradient: linear-gradient(to right,rgb(255, 221, 198) 0%,rgb(255, 223, 201) 70%, rgb(255, 227, 205) 85%);
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
 html {
-  font-size: 14px;
+  font-size: 12px;
   scroll-behavior: smooth;
 }
 
 body {
   position: relative;
-  background: linear-gradient(to right,#f0cbad 0%,#ffe0c7 82%,rgb(255, 236, 219) 90%);
-  height: 10000px;
+  background: linear-gradient(to right,#f3d0b3 0%,#ffe0c7 82%,rgb(255, 236, 219) 90%);
 }
 
 @media screen and (max-width: 700px) {
@@ -26,7 +26,7 @@ body {
 }
 @media screen and (min-width: 300px) {
   html {
-    font-size: calc(10px + 6 * ((100vw - 300px) / 680));
+    font-size: calc(12px + 12 * ((100vw - 300px) / 680));
   }
 }
 @media screen and (min-width: 650px) {
@@ -63,13 +63,8 @@ body {
   margin: 20px;
 }
 
-
-.nav-menu {
-  padding: 20px;
-}
-
-.nav-menu.active {
-  background: linear-gradient(to right,#ffddc6 0%,#fde3d1 90%, rgb(255, 240, 228) 100%);
+.off-white-grade {
+  background: linear-gradient(to right,rgb(255, 221, 198) 0%,rgb(255, 223, 201) 70%, rgb(255, 227, 205) 85%);
 }
 
 .nav-button.active .bar:nth-child(1) {
