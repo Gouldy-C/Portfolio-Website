@@ -34,7 +34,14 @@ export default function Intro() {
               <h1 className="text-[3rem] leading-[1] line font-extrabold text-red-500 xxs:text-[3.4rem] xs:text-[4.5rem] sm:text-[5.5rem] md:text-[7rem] text-left pl-2">Hello, <br/> I’m <span className="underline">Christian<br/>Gouldy</span></h1>
             </div>
             <div className="ml-32 mr-2 sm:ml-48">
-              <img className="rounded-xl min-w-30" src="https://demo.cocobasic.com/ukko-react/assets/photo-1-e5f340d3.jpg" alt="Hero Image" />
+              <Image
+              className="rounded-xl min-w-30"
+              quality={95}
+              src="https://demo.cocobasic.com/ukko-react/assets/photo-1-e5f340d3.jpg"
+              alt="Hero Image"
+              width={536}
+              height={830}
+              />
             </div>
           </div>
         </motion.div>
