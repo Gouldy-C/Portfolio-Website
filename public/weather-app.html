@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script
+      src="https://kit.fontawesome.com/ec34478525.js"
+      crossorigin="anonymous"
+      defer></script>
+
+      <script src="./WeatherApp/js/keys.js" defer></script>
+      <script src="./WeatherApp/js/main.js" defer></script>
+
+    <link rel="stylesheet" href="./WeatherApp/static/css/weather.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous">
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous" defer></script>
+
+    <title>Weather App</title>
+  </head>
+  <body class="">
+    <main class="pt-5 body-main container-xl text-dark d-flex flex-column">
+      <div class="flex-wrap border rounded border-container border-5 d-flex w-100">
+        <div
+          class="p-2 left-inner-container d-flex flex-column justify-content-between m-w-330 flex-grow-1">
+          <h5 class="m-0 date-time align-self-end fw-bold text-light">
+          </h5>
+          <div class="hourly-div d-flex flex-column">
+            <div
+              class="current-weather text-light d-flex justify-content-start">
+              <div class="">
+                <h1 class="m-0 fs-10 city-header"></h1>
+                <hr class="my-2 text-light">
+                <h1 class="m-0 fs-10 weather-header"></h1>
+              </div>
+            </div>
+            <hr class="my-2 text-light">
+            <div class="flex-wrap mt-1 hourly-forecasts d-flex justify-content-evenly">
+            </div>
+          </div>
+        </div>
+        <div class="p-2 text-center right-inner-container border-start border-1 m-w-330 flex-grow-1">
+          <form action="" class="mx-2">
+            <div class="mb-2 border border-2 input-group border-gray rounded-3">
+              <input
+                type="text"
+                class="form-control no-border search-field"
+                placeholder="Zip Code"
+                aria-label="Zip Code"
+                aria-describedby="button-seach">
+              <button
+                class="submit-btn btn btn-outline-secondary no-border"
+                type="submit"
+                id="button-search">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-lg"
+                  style="color: #2e2e2e"></i>
+              </button>
+            </div>
+            <div class="time-units">
+              <div class="d-flex justify-content-evenly">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="units"
+                    id="unit-metric"
+                    onclick="metric()">
+                  <label class="form-check-label" for="units"> Metric </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="units"
+                    id="unit-imperial"
+                    onclick="imperial()"
+                    checked>
+                  <label class="form-check-label" for="unit-imperial">
+                    Imperial
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <hr class="my-1 text-light">
+          <div class="sun-times d-flex justify-content-evenly">
+            <p class="my-0 sunrise"></p>
+            <div class="mx-1 vr text-light"></div>
+            <p class="my-0 sunset"></p>
+          </div>
+          <hr class="my-1 text-light">
+          <div
+            class="temperatures d-flex justify-content-evenly align-items-center">
+            <div class="text-center temp-actual">
+            </div>
+            <div class="vr text-light"></div>
+            <div class="text-center temp-high-low">
+            </div>
+            <div class="vr text-light"></div>
+            <div class="text-center temp-feels-div">
+            </div>
+          </div>
+          <hr class="my-1 text-light">
+          <div class="winds d-flex justify-content-evenly align-items-center">
+            <div class="wind-direction">
+            </div>
+            <div class="vr text-light"></div>
+            <div
+              class="mx-2 text-center wind-arrow-div position-relative ps-2 pe-1">
+              <p class="m-0 north text-danger fw-bold lh-1">N</p>
+              <div class="p-3 m-1 border arrow rounded-pill">
+                <i class="wind-arrow fa-sharp fa-solid fa-angles-up fa-bounce fa-xl"></i>
+              </div>
+              <p class="m-0 text-black south fw-bold lh-1">S</p>
+              <p
+                class="m-0 text-black south fw-bold lh-1 position-absolute top-50 start-0 translate-middle">
+                W
+              </p>
+              <p
+                class="m-0 text-black south fw-bold lh-1 position-absolute top-50 start-100 translate-middle">
+                E
+              </p>
+            </div>
+            <div class="vr text-light"></div>
+            <div class="win-speeds">
+              <div class="wind-avg">
+              </div>
+              <hr class="m-1 text-light">
+              <div class="wind-gust">
+              </div>
+            </div>
+          </div>
+          <hr class="my-1 text-light">
+          <div class="daily-forecasts d-flex flex-column align-items-center">
+            <div class="p-1 daily-header">
+              <h4 class="p-0 m-0">5 Day Forecast</h4>
+            </div>
+            <div class="daily-forecasts">
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

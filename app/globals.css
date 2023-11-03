@@ -2,77 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --off-white-gradient: linear-gradient(to right,rgb(255, 221, 198) 0%,rgb(255, 223, 201) 70%, rgb(255, 227, 205) 85%);
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
 html {
-  font-size: 12px;
-  scroll-behavior: smooth;
+  --line-color: rgba(239, 68, 68, 0.5);
 }
 
-body {
-  position: relative;
-  background: linear-gradient(to right,#f3d0b3 0%,#ffe0c7 82%,rgb(255, 236, 219) 90%);
+html.dark {
+  --line-color: rgba(239, 68, 68, 0.5);
 }
 
-@media screen and (max-width: 700px) {
-  body {
-    background: #f3d1b6;
-  }
-}
-@media screen and (min-width: 300px) {
-  html {
-    font-size: calc(12px + 12 * ((100vw - 300px) / 680));
-  }
-}
-@media screen and (min-width: 650px) {
-  html {
-    font-size: calc(20px + 10 * ((100vw - 650px) / 680));
-  }
-}
-@media screen and (min-width: 1000px) {
-  html {
-    font-size: min(calc(26px + 10 * ((100vw - 1000px) / 680)), 32px);
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.max-width-container {
-  max-width: 1440px;
-}
-
-.bar {
-  height: 4px;
-  background: #000000;
-  transition: 0.4s;
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
-.nav-button {
-  width: 35px;
-  margin: 20px;
-}
-
-.off-white-grade {
-  background: linear-gradient(to right,rgb(255, 221, 198) 0%,rgb(255, 223, 201) 70%, rgb(255, 227, 205) 85%);
-}
-
-.nav-button.active .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-7px, 7px);
-}
-.nav-button.active .bar:nth-child(2) {
-  opacity: 0;
-}
-.nav-button.active .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-6px, -7px);
+.borderBlack {
+  @apply border border-black/10;
 }
