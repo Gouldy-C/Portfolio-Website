@@ -65,7 +65,7 @@ export const projectsData = [
       "A public web app for quick weather updates by zip-code. It shows current weather, forecasted weather by day and by hour, winds and more.",
     tags: [ "HTML", "CSS", "Bootstrap", "Restful API", "Fetch", "JSON"],
     imageUrl: weatherImg,
-    link: "/weather-app"
+    link: "/#home"
   },
 ] as const;
 
