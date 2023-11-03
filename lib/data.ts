@@ -1,7 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-
 import weatherImg from "@/public/weather-app.png";
 
 export const links = [
@@ -89,6 +88,5 @@ export const skillsData = [
   "Bootstrap",
   "Restful API",
   "User Auth",
-  "PostgreSQL",
   "GitHub",
 ] as const;
