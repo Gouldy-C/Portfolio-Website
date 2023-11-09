@@ -69,29 +69,29 @@ const backgroundImage = (num : number) => {
   if (321 >= num && num >= 300) {
     return '/images/bgs/drizzle.jpg'
   }else if (531 >= num && num >= 500) {
-    return './images/bgs/rain.jpg'
+    return '/images/bgs/rain.jpg'
   }else if (622 >= num && num >= 600) {
-    return './images/bgs/snow.jpg'
+    return '/images/bgs/snow.jpg'
   }else if (num === 741) {
-    return './images/bgs/fog.jpg'
+    return '/images/bgs/fog.jpg'
   }else if (781 >= num && num >= 700) {
-    return './images/bgs/atmosphere.webp'
+    return '/images/bgs/atmosphere.webp'
   }else if (num === 800) {
-    return './images/bgs/clear.jpg'
+    return '/images/bgs/clear.jpg'
   }else if (802 >= num && num >= 801) {
-    return './images/bgs/scattered.jpg'
+    return '/images/bgs/scattered.jpg'
   }else if (num === 803) {
-    return './images/bgs/mostlyCloudy.jpg'
+    return '/images/bgs/mostlyCloudy.jpg'
   }else if (num === 804) {
-    return './images/bgs/overcast.jpg'
+    return '/images/bgs/overcast.jpg'
   }else if (num === 802) {
-    return './images/bgs/cloudy.jpg'
+    return '/images/bgs/cloudy.jpg'
   }else if (232 >= num && num >= 212) {
-    return './images/bgs/ThunderStorm2.jpg'
+    return '/images/bgs/ThunderStorm2.jpg'
   }else if (211 >= num && num >= 200) {
-    return './images/bgs/ThunderStorm1.jpg'
+    return '/images/bgs/ThunderStorm1.jpg'
   }else{
-    return './images/bgs/clear.jpg'
+    return '/images/bgs/clear.jpg'
   }
 }
 

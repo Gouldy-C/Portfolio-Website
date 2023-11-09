@@ -37,7 +37,7 @@ export default function Intro() {
               <Image
               className="rounded-xl min-w-30"
               quality={95}
-              src="https://demo.cocobasic.com/ukko-react/assets/photo-1-e5f340d3.jpg"
+              src="/images/heroimage.png"
               alt="Hero Image"
               width={536}
               height={830}
@@ -48,7 +48,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-14 px-4 text-2xl !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
