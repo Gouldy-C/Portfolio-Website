@@ -20,7 +20,7 @@ const getWeatherData = async (searchString: string, units: boolean) => {
   }
 }
 
-function page() {
+export default function WeatherApp() {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [search, setSearch] = useState<string>("");
   const [unit, setUnit] = useState<boolean>(true);
@@ -205,4 +205,3 @@ function page() {
   );
 }
 
-export default page;
