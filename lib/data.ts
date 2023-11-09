@@ -32,12 +32,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Head Of Operations and Development",
-    location: "DolphinScuba.com - Sacramento, CA",
+    title: "Graduated Coding Temple",
+    location: "Davis, CA",
     description:
-    "I worked as a product manager and data scientist and was quickly promoted to head of operations and development. ",
-    icon: React.createElement(CgWorkAlt),
-    date: "2016 - 2021",
+      "I graduated after 4 months of studying. I continued my educational journey learning several new and essential frameworks and libraries over the following months.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023",
   },
   {
     title: "Supervisor of Sales",
@@ -48,12 +48,12 @@ export const experiencesData = [
     date: "2021 - 2023",
   },
   {
-    title: "Graduated Coding Temple",
-    location: "Davis, CA",
+    title: "Head Of Operations and Development",
+    location: "DolphinScuba.com - Sacramento, CA",
     description:
-      "I graduated after 4 months of studying. I continued my educational journey learning several new and essential frameworks and libraries over the following months.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
+    "I worked as a product manager and data scientist and was quickly promoted to head of operations and development. ",
+    icon: React.createElement(CgWorkAlt),
+    date: "2016 - 2021",
   },
 ] as const;
 

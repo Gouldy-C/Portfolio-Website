@@ -37,7 +37,7 @@ export default function Intro() {
               <Image
               className="rounded-xl min-w-30"
               quality={95}
-              src="/images/heroimage.png"
+              src="/images/heroimage.jpg"
               alt="Hero Image"
               width={536}
               height={830}
