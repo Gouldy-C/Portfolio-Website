@@ -8,6 +8,9 @@ const nextConfig = {
       },{
         protocol: "https",
         hostname: "demo.cocobasic.com",
+      },{
+        protocol: "https",
+        hostname: "openweathermap.org",
       },
     ],
   },

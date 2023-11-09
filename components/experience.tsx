@@ -12,7 +12,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.7);
   const { theme } = useTheme();
 
   return (
@@ -36,16 +36,17 @@ export default function Experience() {
               borderRight:
                 theme === "light"
                   ? "0.4rem solid #9ca3af"
-                  : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                  : "0.4rem solid rgba(255, 255, 255, 0.75)",
             }}
             date={item.date}
             icon={item.icon}
             iconStyle={{
               background:
-                theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                theme === "light" ? "white" : "rgba(255, 255, 255, 0.75)",
               fontSize: "1.5rem",
-            }}
-          >
+              color: "rgba(20, 20, 20, 0.8)",
+              
+            }}>
             <h3 className="font-semibold capitalize">{item.title}</h3>
             <p className="font-normal !mt-0">{item.location}</p>
             <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">

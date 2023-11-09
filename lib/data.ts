@@ -1,7 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import weatherImg from "@/public/weather-app.png";
+import weatherImg from "@/public/images/weather-app.png";
 
 export const links = [
   {
@@ -62,10 +62,12 @@ export const projectsData = [
     title: "Weather App",
     description:
       "A public web app for quick weather updates by zip-code. It shows current weather, forecasted weather by day and by hour, winds and more.",
+    learned: "I learned about using an API to fetch data and parse that data. As well as how to effectively relay that data to the end user in user friendly and stylish way.",
     tags: [ "HTML", "CSS", "Bootstrap", "Restful API", "Fetch", "JSON"],
     imageUrl: weatherImg,
-    link: "/#home"
+    link: "/weather-app"
   },
+  
 ] as const;
 
 export const skillsData = [
