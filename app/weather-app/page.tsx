@@ -7,8 +7,7 @@ import DailyCard from "./components/DailyCard";
 import { PiMagnifyingGlassBold } from "react-icons/pi"
 import { FaAngleDoubleUp } from "react-icons/fa"
 import ClipLoader from "react-spinners/ClipLoader"
-import { useTheme } from "@/context/theme-context";
-import 'animate.css'
+import { useTheme } from "@/context/theme-context"
 
 
 const getWeatherData = async (searchString: string, units: boolean) => {

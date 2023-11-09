@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { forUnitSymbol } from "../lib/utils";
 
 interface HourlyCardProps { 
   icon : string,
