@@ -166,7 +166,7 @@ export default function WeatherApp() {
                   }}>
                   {!(Number(weather?.windSpeed) == 0) && !(Number(weather?.windGust) == 0) && 
                   <FaAngleDoubleUp
-                  className="h-[22px] animate-[bounce_2.5s_infinite]"/>}
+                  className="h-[22px] animate-bounce"/>}
                 </div>
                 <p className=" south">S</p>
                 <p className="absolute top-[40%] left-[-24px]">
@@ -204,4 +204,3 @@ export default function WeatherApp() {
     </main>
   );
 }
-
