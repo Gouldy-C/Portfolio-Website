@@ -62,7 +62,7 @@ export const projectsData = [
   {
     title: "Weather App",
     description:
-      "A public web app for quick weather updates by zip-code. It shows current weather, forecasted weather by day and by hour, winds and more.",
+    "A public web app for quick weather updates by zip-code. It shows current weather, forecasted weather by day and by hour, winds and more.",
     learned: "I learned about using an API to fetch data and parse that data. As well as how to effectively relay that data to the end user in user friendly and stylish way.",
     tags: [ "HTML", "CSS", "Bootstrap", "Restful API", "Fetch", "JSON"],
     imageUrl: weatherImg,
