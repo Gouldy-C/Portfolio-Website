@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import weatherImg from "@/public/images/weather-app.png";
+import omniLingual from "@/public/images/Omni-Lingual.gif";
 
 export const links = [
   {
@@ -66,6 +67,15 @@ export const projectsData = [
     tags: [ "HTML", "CSS", "Bootstrap", "Restful API", "Fetch", "JSON"],
     imageUrl: weatherImg,
     link: "/weather-app"
+  },
+  {
+    title: "Omni-Lingual Chat",
+    description:
+      "Breaking language barriers in real-time: Connect seamlessly with anyone, anywhere, through my dynamic translating messaging web app. App is still in development.",
+    learned: "I learned loads about Next.js and React's component system and higher order components. It a top to bottom SaaS Application, I learned a ton about BaaS and payment processors. This was also the fist project where I did a deep dive into security and application protection.",
+    tags: [ "Next.js", "React", "Tailwind", "Stripe", "OAuth", "NextAuth", "Firebase", "React Query", "Modern Design"],
+    imageUrl: omniLingual,
+    link: "https://omni-lingual.online"
   },
   
 ] as const;
