@@ -77,7 +77,7 @@ export const projectsData = [
       "Modern Design",
     ],
     imageUrl: omniLingual,
-    link: "https://omni-lingual.online",
+    link: "https://omni-lingual-chat.vercel.app",
   },
   {
     title: "Weather App",
