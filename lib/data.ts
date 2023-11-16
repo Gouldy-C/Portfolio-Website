@@ -44,7 +44,7 @@ export const experiencesData = [
     title: "Supervisor of Sales",
     location: "Ace Hardware - Davis, CA",
     description:
-    "As a supervisor of sales I helped lead and motivated a team of sales associates to achieve sales targets and provide exceptional customer service.",
+      "As a supervisor of sales I helped lead and motivated a team of sales associates to achieve sales targets and provide exceptional customer service.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2023",
   },
@@ -52,7 +52,7 @@ export const experiencesData = [
     title: "Head Of Operations and Development",
     location: "DolphinScuba.com - Sacramento, CA",
     description:
-    "I worked as a product manager and data scientist and was quickly promoted to head of operations and development. ",
+      "I worked as a product manager and data scientist and was quickly promoted to head of operations and development. ",
     icon: React.createElement(CgWorkAlt),
     date: "2016 - 2021",
   },
@@ -60,24 +60,35 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Weather App",
-    description:
-    "A public web app for quick weather updates by zip-code. It shows current weather, forecasted weather by day and by hour, winds and more.",
-    learned: "I learned about using an API to fetch data and parse that data. As well as how to effectively relay that data to the end user in user friendly and stylish way.",
-    tags: [ "HTML", "CSS", "Bootstrap", "Restful API", "Fetch", "JSON"],
-    imageUrl: weatherImg,
-    link: "/weather-app"
-  },
-  {
     title: "Omni-Lingual Chat",
     description:
       "Breaking language barriers in real-time: Connect seamlessly with anyone, anywhere, through my dynamic translating messaging web app. App is still in development.",
-    learned: "I learned loads about Next.js and React's component system and higher order components. It a top to bottom SaaS Application, I learned a ton about BaaS and payment processors. This was also the fist project where I did a deep dive into security and application protection.",
-    tags: [ "Next.js", "React", "Tailwind", "Stripe", "OAuth", "NextAuth", "Firebase", "React Query", "Modern Design"],
+    learned:
+      "I gained extensive knowledge in Next.js, React's component system, and higher-order components while developing a comprehensive top-to-bottom SaaS application with full BaaS and payment processing.",
+    tags: [
+      "Next.js",
+      "React",
+      "Tailwind",
+      "Stripe",
+      "OAuth",
+      "NextAuth",
+      "Firebase",
+      "React Query",
+      "Modern Design",
+    ],
     imageUrl: omniLingual,
-    link: "https://omni-lingual.online"
+    link: "https://omni-lingual.online",
   },
-  
+  {
+    title: "Weather App",
+    description:
+      "A public web app for quick weather updates by zip-code. It shows current weather, forecasted weather by day and by hour, winds and more.",
+    learned:
+      "I learned about using an API to fetch data and parse that data. As well as how to effectively relay that data to the end user in user friendly and stylish way.",
+    tags: ["HTML", "CSS", "Bootstrap", "Restful API", "Fetch", "JSON"],
+    imageUrl: weatherImg,
+    link: "/weather-app",
+  },
 ] as const;
 
 export const skillsData = [
