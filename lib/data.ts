@@ -64,7 +64,7 @@ export const projectsData = [
     description:
       "Breaking language barriers in real-time: Connect seamlessly with anyone, anywhere, through my dynamic translating messaging web app. App is still in development.",
     learned:
-      "I gained extensive knowledge in Next.js, React's component system, and higher-order components while developing a comprehensive top-to-bottom SaaS application with full BaaS and payment processing.",
+      "I gained extensive knowledge in Next.js, React's component system, and higher-order components while developing a comprehensive top-to-bottom SaaS application with full google auth and payment processing.",
     tags: [
       "Next.js",
       "React",
