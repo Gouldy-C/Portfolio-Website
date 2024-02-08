@@ -10,7 +10,7 @@ import { Toaster } from "react-hot-toast";
 const roboto = Roboto_Slab({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"] });
 
 export const metadata = {
-  title: "Christian's | Portfolio",
+  title: "Christian Gouldy | Portfolio",
   description: "Christian Full Stack Developer Portfolio Website",
 };
 

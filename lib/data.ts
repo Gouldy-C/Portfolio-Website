@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import weatherImg from "@/public/images/weather-app.png";
 import omniLingual from "@/public/images/Omni-Lingual.gif";
+import doumi from "@/public/images/Doumi.png";
 
 export const links = [
   {
@@ -33,6 +34,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Software Engineer",
+    location: "Davis, CA",
+    description:
+      "Software Engineer internship at Co.Lab. I worked in a cross functional team to develope a mobile app called Doumi.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023-2024",
+  },
+  {
     title: "Graduated Coding Temple",
     location: "Davis, CA",
     description:
@@ -59,6 +68,22 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Doumi Mobile App",
+    description:
+      "Doumi envisions a future where caregivers caring for patients find support in a judge-free community and expert guidance on how to redirect agitated patients.",
+    learned:
+      "I worked full stack on this project. Working extensively on backend data structure and security. As well as do a lot with look and feel of the app on the frontend. We optimized the app for scale knowing that this app could be used by 25% of the US population.",
+    tags: [
+      "React Native",
+      "Expo",
+      "OAuth",
+      "Firebase",
+      "Collaborative Design",
+    ],
+    imageUrl: doumi,
+    link: "https://www.joincolab.io/product/doumi",
+  },
   {
     title: "Omni-Lingual Chat",
     description:
@@ -92,24 +117,27 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "React",
   "JavaScript",
   "TypeScript",
-  "React",
+  "Python",
+  "React Native",
+  "Git",
+  "GitHub",
+  "MongoDB",
+  "PostgreSQL",
+  "SQL",
+  "NoSQL",
+  "Express",
+  "HTML",
+  "CSS",
   "Next.js",
   "Node.js",
-  "Git",
   "Tailwind",
-  "MongoDB",
-  "Express",
-  "PostgreSQL",
-  "Python",
   "Flask",
   "Framer Motion",
   "SASS",
   "Bootstrap",
   "Restful API",
   "User Auth",
-  "GitHub",
 ] as const;

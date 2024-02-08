@@ -41,7 +41,7 @@ export default function Project({
       onClick={handleLinkClick}
     >
       <section className="bg-gray-100 max-w-[44rem] border border-black/5 rounded-lg overflow-hidden sm:pr-4 relative hover:bg-gray-200 transition sm:group-even:pl-4 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-3 sm:pr-2 sm:pt-10 sm:max-w-[58%] flex flex-col h-full sm:group-odd:ml-[20rem]">
+        <div className="pt-4 pb-7 px-5 sm:pl-3 pr-5 sm:pt-10 sm:max-w-[58%] flex flex-col h-full sm:group-odd:ml-[20rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-3 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
