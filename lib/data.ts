@@ -42,8 +42,8 @@ export const experiencesData = [
     date: "2023-2024",
   },
   {
-    title: "Graduated Coding Temple",
-    location: "Davis, CA",
+    title: "Software Engineering Certificate",
+    location: "Coding Temple - Davis, CA",
     description:
       "I graduated after 4 months of studying. I continued my educational journey learning several new and essential frameworks and libraries over the following months.",
     icon: React.createElement(LuGraduationCap),

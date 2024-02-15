@@ -1,6 +1,5 @@
 # Christian Gouldy's Portfolio Website
 
-
 ## Introduction
 This is my personal portfolio website, showcasing my work, skills, and experiences as a software developer.
 
