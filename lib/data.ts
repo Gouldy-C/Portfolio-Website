@@ -35,7 +35,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "Software Engineer",
-    location: "Davis, CA",
+    location: "Co.Lab - Davis, CA",
     description:
       "Software Engineer internship at Co.Lab. I worked in a cross functional team to develope a mobile app called Doumi.",
     icon: React.createElement(CgWorkAlt),
