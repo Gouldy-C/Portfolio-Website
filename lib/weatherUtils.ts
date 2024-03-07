@@ -1,5 +1,4 @@
-import { wd, months } from "../app/weather-app/lib/data"
-
+import { wd, months } from "../app/weather-app/lib/data";
 
 export const titleCase = (str: string) => {
   return str
@@ -25,11 +24,8 @@ const formatTime = (h: number, m: number) => {
 };
 
 export const getLocation = async () => {
-  {
-    console.log(process.env.LOCATION_API_KEY);
-  }
   const res = await fetch(
-    `https://api.geoapify.com/v1/ipinfo?&apiKey=${process.env.LOCATION_API_KEY}&`
+    `https://api.geoapify.com/v1/ipinfo?&apiKey=${process.env.NEXT_PUBLIC_LOCATION_API_KEY}`
   );
   const data = await res.json();
   return `${data.city.name}, ${data.state.name}, ${data.country.name}`;
@@ -44,29 +40,26 @@ export const getCurrentWeather = async (
   if (!searchString) {
     searchString = await getLocation();
   }
-  {
-    console.log(process.env.LOCATION_API_KEY);
-  }
   if (Number(searchString)) {
     resCurrent = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?zip=${searchString}&appid=${
-        process.env.WEATHER_API_KEY
+        process.env.NEXT_PUBLIC_WEATHER_API_KEY
       }&units=${forUnitValue(units)}`
     );
     resForecast = await fetch(
       `https://api.openweathermap.org/data/2.5/forecast?zip=${searchString}&appid=${
-        process.env.WEATHER_API_KEY
+        process.env.NEXT_PUBLIC_WEATHER_API_KEY
       }&units=${forUnitValue(units)}`
     );
   } else {
     resCurrent = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${searchString}&appid=${
-        process.env.WEATHER_API_KEY
+        process.env.NEXT_PUBLIC_WEATHER_API_KEY
       }&units=${forUnitValue(units)}`
     );
     resForecast = await fetch(
       `https://api.openweathermap.org/data/2.5/forecast?q=${searchString}&appid=${
-        process.env.WEATHER_API_KEY
+        process.env.NEXT_PUBLIC_WEATHER_API_KEY
       }&units=${forUnitValue(units)}`
     );
   }

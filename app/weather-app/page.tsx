@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import HourlyCard from "./components/HourlyCard";
 import DailyCard from "./components/DailyCard";
 import { PiMagnifyingGlassBold } from "react-icons/pi"
@@ -36,7 +36,7 @@ export default function WeatherApp() {
   };
   
   
-  useLayoutEffect(() => {
+  useEffect(() => {
     const fetchWeatherData = async () => {
       try {
         const weatherData = await getWeatherData(search, unit);
@@ -51,7 +51,6 @@ export default function WeatherApp() {
     };
     
     fetchWeatherData()
-    
 
     return () => {};
   }, [ search, unit ]);
@@ -125,7 +124,6 @@ export default function WeatherApp() {
                     onClick={() => {
                       setUnit(false);
                     }}
-                    checked={!unit}
                   />
                   <label className="form-check-label" htmlFor="unit-metric">
                     {" "}Metric
@@ -140,7 +138,7 @@ export default function WeatherApp() {
                     onClick={() => {
                       setUnit(true);
                     }}
-                    checked={unit}
+                    defaultChecked
                   />
                   <label className="form-check-label" htmlFor="unit-imperial">
                     {" "}Imperial
