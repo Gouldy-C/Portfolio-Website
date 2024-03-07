@@ -20,6 +20,7 @@ const getWeatherData = async (searchString: string, units: boolean) => {
   }
 }
 
+
 export default function WeatherApp() {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [search, setSearch] = useState<string>("");
