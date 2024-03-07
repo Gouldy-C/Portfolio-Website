@@ -1,13 +1,13 @@
 "use client";
 
 import { useLayoutEffect, useRef, useState } from "react";
-import { formatData, getCurrentWeather } from "./lib/utils";
 import HourlyCard from "./components/HourlyCard";
 import DailyCard from "./components/DailyCard";
 import { PiMagnifyingGlassBold } from "react-icons/pi"
 import { FaAngleDoubleUp } from "react-icons/fa"
 import ClipLoader from "react-spinners/ClipLoader"
 import { useTheme } from "@/context/theme-context"
+import { formatData, getCurrentWeather } from "@/lib/weatherUtils";
 
 
 const getWeatherData = async (searchString: string, units: boolean) => {
