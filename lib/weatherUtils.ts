@@ -74,7 +74,6 @@ export const getCurrentWeather = async (
 };
 
 const backgroundImage = (num: number) => {
-  console.log(num);
   if (321 >= num && num >= 300) {
     return "/images/bgs/drizzle.jpg";
   } else if (531 >= num && num >= 500) {
