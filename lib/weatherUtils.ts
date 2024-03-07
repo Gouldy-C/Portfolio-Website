@@ -1,4 +1,5 @@
-import { wd, months } from "../app/weather-app/lib/data";
+import { wd, months } from "../app/weather-app/lib/data"
+
 
 export const titleCase = (str: string) => {
   return str
