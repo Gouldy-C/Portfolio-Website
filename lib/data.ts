@@ -34,6 +34,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Frontend Software Engineer",
+    location: "Ziteo Medical - Pleasant Hill, CA",
+    description:
+      "During my time as a Front End Software Engineer at Ziteo Medical from March 2024 to September 2024, I spearheaded the design and development of a comprehensive UI/UX using PySide6 and VTK. This project significantly enhanced user interaction and operational efficiency. I led the entire development life-cycle, from initial concept and wire-framing to implementation and deployment, ensuring that the final product met both user needs and technical requirements. Collaborating closely with robotics engineers, I gained deep insights into medical robotics and startup dynamics, which was crucial for integrating software and hardware components seamlessly. Additionally, I implemented a modular and scalable codebase, facilitating future enhancements, simplifying maintenance, and reducing technical debt.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024-2024",
+  },
+  {
     title: "Software Engineer",
     location: "Co.Lab - Davis, CA",
     description:
