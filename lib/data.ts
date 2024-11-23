@@ -82,13 +82,7 @@ export const projectsData = [
       "Doumi envisions a future where caregivers caring for patients find support in a judge-free community and expert guidance on how to redirect agitated patients.",
     learned:
       "I worked full stack on this project. Working extensively on backend data structure and security. As well as do a lot with look and feel of the app on the frontend. We optimized the app for scale knowing that this app could be used by 25% of the US population.",
-    tags: [
-      "React Native",
-      "Expo",
-      "OAuth",
-      "Firebase",
-      "Collaborative Design",
-    ],
+    tags: ["React Native", "Expo", "OAuth", "Firebase", "Collaborative Design"],
     imageUrl: doumi,
     link: "https://www.joincolab.io/product/doumi",
   },
@@ -110,7 +104,7 @@ export const projectsData = [
       "Modern Design",
     ],
     imageUrl: omniLingual,
-    link: "https://omni-lingual.online",
+    link: "https://omni-lingual-chat.vercel.app/",
   },
   {
     title: "Weather App",
@@ -149,3 +143,34 @@ export const skillsData = [
   "Restful API",
   "User Auth",
 ] as const;
+
+// "dependencies": {
+//   "@react-email/components": "^0.0.7",
+//   "@react-email/tailwind": "^0.0.8",
+//   "@types/node": "20.3.2",
+//   "@types/react": "18.2.14",
+//   "@types/react-dom": "18.2.6",
+//   "@vercel/analytics": "^1.2.2",
+//   "@vercel/speed-insights": "^1.0.10",
+//   "autoprefixer": "10.4.14",
+//   "clsx": "^1.2.1",
+//   "eslint": "8.43.0",
+//   "eslint-config-next": "13.4.7",
+//   "framer-motion": "^10.12.17",
+//   "next": "13.4.8",
+//   "postcss": "8.4.24",
+//   "react": "18.2.0",
+//   "react-dom": "18.2.0",
+//   "react-hot-toast": "^2.4.1",
+//   "react-icons": "^4.10.1",
+//   "react-intersection-observer": "^9.5.2",
+//   "react-spinners": "^0.13.8",
+//   "react-vertical-timeline-component": "^3.6.0",
+//   "resend": "^0.16.0",
+//   "sharp": "^0.32.6",
+//   "tailwindcss": "3.3.2",
+//   "typescript": "5.1.5"
+// },
+// "devDependencies": {
+//   "@types/react-vertical-timeline-component": "^3.3.3"
+// }

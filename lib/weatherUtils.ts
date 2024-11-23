@@ -23,12 +23,27 @@ const formatTime = (h: number, m: number) => {
   return `${hours}:${min} ${hour12}`;
 };
 
-export const getLocation = async () => {
-  const res = await fetch(
-    `https://api.geoapify.com/v1/ipinfo?&apiKey=${process.env.NEXT_PUBLIC_LOCATION_API_KEY}`
-  );
-  const data = await res.json();
-  return `${data.city.name}, ${data.state.name}, ${data.country.name}`;
+export const getLocation = (): Promise<GeolocationCoordinates> => {
+  return new Promise((resolve, reject) => {
+    if (!navigator.geolocation) {
+      reject(new Error('Geolocation is not supported by your browser'));
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position: GeolocationPosition) => {
+        resolve(position.coords);
+      },
+      (err: GeolocationPositionError) => {
+        reject(new Error(`Geolocation error: ${err.message}`));
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0
+      }
+    );
+  });
 };
 
 export const getCurrentWeather = async (
@@ -37,10 +52,9 @@ export const getCurrentWeather = async (
 ) => {
   let resCurrent;
   let resForecast;
-  if (!searchString) {
-    searchString = await getLocation();
-  }
-  if (Number(searchString)) {
+  const location: GeolocationCoordinates | null = await getLocation();
+  searchString = searchString.trim().replace(" ", "");
+  if (searchString && Number(searchString)) {
     resCurrent = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?zip=${searchString}&appid=${
         process.env.NEXT_PUBLIC_WEATHER_API_KEY
@@ -51,7 +65,7 @@ export const getCurrentWeather = async (
         process.env.NEXT_PUBLIC_WEATHER_API_KEY
       }&units=${forUnitValue(units)}`
     );
-  } else {
+  } else if (searchString) {
     resCurrent = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${searchString}&appid=${
         process.env.NEXT_PUBLIC_WEATHER_API_KEY
@@ -62,13 +76,35 @@ export const getCurrentWeather = async (
         process.env.NEXT_PUBLIC_WEATHER_API_KEY
       }&units=${forUnitValue(units)}`
     );
+  } else if (location) {
+    resCurrent = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&appid=${
+        process.env.NEXT_PUBLIC_WEATHER_API_KEY
+      }&units=${forUnitValue(units)}`
+    );
+    resForecast = await fetch(
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${location.latitude}&lon=${location.longitude}&appid=${
+        process.env.NEXT_PUBLIC_WEATHER_API_KEY
+      }&units=${forUnitValue(units)}`
+    );
+  } else {
+    resCurrent = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=New_York&appid=${
+        process.env.NEXT_PUBLIC_WEATHER_API_KEY
+      }&units=${forUnitValue(units)}`
+    );
+    resForecast = await fetch(
+      `https://api.openweathermap.org/data/2.5/forecast?q=New_York&appid=${
+        process.env.NEXT_PUBLIC_WEATHER_API_KEY
+      }&units=${forUnitValue(units)}`
+    );
   }
   if (resCurrent.ok && resForecast.ok) {
     const dataCurrent: CurrentWeatherData = await resCurrent.json();
     const dataForecast: ForecastWeatherData = await resForecast.json();
     return { dataCurrent, dataForecast };
   } else {
-    console.log("Bad Response");
+    console.log("Bad Response Weather API");
     return null;
   }
 };

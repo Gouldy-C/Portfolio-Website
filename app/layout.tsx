@@ -6,8 +6,6 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
 
 
 const roboto = Roboto_Slab({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"] });
@@ -31,12 +29,10 @@ export default function RootLayout({
         <div className="bg-[#bde5f1] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#305b66]"></div>
 
         <ThemeContextProvider>
-          <SpeedInsights/>
           <ActiveSectionContextProvider>
             <Header />
             {children}
             <Footer />
-            <Analytics />
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>

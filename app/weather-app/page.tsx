@@ -95,15 +95,15 @@ export default function WeatherApp() {
               </div>
             </div>
           </div>
-          <div className="p-2 text-center backdrop-blur-sm bg-slate-100/80 border-1 min-w-[330px] grow text-gray-950 rounded-md text-lg divide-y divide-slate-700">
+          <div className="p-2 text-center bg-slate-100/80 border-1 min-w-[330px] min-h-[200px] grow text-gray-950 rounded-md text-lg divide-y divide-slate-700">
             <form action="" className="m-2">
               <div className="flex mb-2 border-2 rounded input-group border-slate-800/70">
                 <input
                   ref={searchInput}
                   type="text"
                   className="border-none search-field w-[85%] p-2 text-lg outline-none"
-                  placeholder="Zip Code"
-                  aria-label="Zip Code"
+                  placeholder='Zip Code / City, State, Country'
+                  aria-label='Zip Code / City, State, Country'
                   aria-describedby="button-search"
                 />
                 <button
