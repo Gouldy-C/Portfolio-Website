@@ -53,7 +53,7 @@ export const getCurrentWeather = async (
   let resCurrent;
   let resForecast;
   const location: GeolocationCoordinates | null = await getLocation();
-  searchString = searchString.trim().replaceAll(" ", "");
+  searchString = searchString.trim().replaceAll(" ", "%20");
   if (searchString && Number(searchString)) {
     resCurrent = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?zip=${searchString}&appid=${
