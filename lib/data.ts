@@ -1,5 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
+import { FaGamepad } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import weatherImg from "@/public/images/weather-app.png";
 import omniLingual from "@/public/images/Omni-Lingual.gif";
@@ -33,6 +34,14 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "WebCraft - Ongoing Personal Project",
+    location: "Davis, CA",
+    description:
+      "WebCraft, a high-performance, procedurally generated voxel game engine meticulously crafted with TypeScript and Three.js. This project showcases innovative solutions for efficient chunk management, leveraging Web Workers for seamless, non-blocking world generation. Explore a dynamic and visually engaging 3D environment optimized for smooth gameplay, demonstrating advanced techniques in game engine architecture and graphics rendering.",
+    icon: React.createElement(FaGamepad),
+    date: "2024-2025",
+  },
   {
     title: "Frontend Software Engineer",
     location: "Ziteo Medical - Pleasant Hill, CA",
