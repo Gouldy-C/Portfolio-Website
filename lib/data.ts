@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Co.Lab - Davis, CA",
     description:
-      "Software Engineer internship at Co.Lab. I worked in a cross functional team to develope a mobile app called Doumi.",
+      "Software Engineer internship at Co.Lab. I worked in a cross functional team to develop a mobile app called Doumi.",
     icon: React.createElement(CgWorkAlt),
     date: "2023-2024",
   },
